@@ -8,6 +8,11 @@ import "../../styles/demo.css";
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
+
+	useEffect(() => {
+		actions.get_profile()
+	}, [])
+
 	return (
 		<div className="container">
 		</div>
